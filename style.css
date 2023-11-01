@@ -90,7 +90,7 @@ li {
 
 .circles__container {
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     display: flex;
     justify-content: center;
     gap: 8px;
@@ -110,4 +110,114 @@ li {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+}
+
+.produtos__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0px 10px;
+}
+
+.produto__item {
+    background-color: #F2F2F2;
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.imagemProduto {
+    width: 300px;
+    height: 300px;
+}
+
+.subTitleProdutos {
+    font-size: 16px;
+    margin: 18px 0px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ancorSeeMore {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.title__Banner, .subTtile__banner {
+    text-align: center;
+}
+
+.middleBanner__infos {
+    background-color: #F2F2F2;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.img__middleBanner {
+    margin: 10px 0;
+}
+
+.text__infos {
+    text-align: center;
+    padding: 10px;
+}
+
+.infosProd__banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.bannerR img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.mostruario {
+    background-color: #000;
+}
+
+.subTitle__mostru {
+    color: #ffffff;
+    padding: 10px;
+}
+
+.mostru__itemPrincipal {
+    background-color: #FFF;
+    border-radius: 16px;
+    margin: 10px;
+}
+
+.mostru__itemPrincipal img {
+    width: 100%;
+    padding: 10px 10px 0 10px;
+    border-radius: 16px;
+}
+
+.itens__sec {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mostru__itensSec {
+    display: flex;
+    background-color: white;
+    border-radius: 16px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.imgSec {
+    width: 100%;
+    border-radius: 16px;
 }

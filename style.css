@@ -185,6 +185,7 @@ li {
 
 .mostruario {
     background-color: #000;
+    margin-bottom: 40px;
 }
 
 .subTitle__mostru {
@@ -220,4 +221,67 @@ li {
 .imgSec {
     width: 100%;
     border-radius: 16px;
+}
+
+.contentInfos {
+    display: flex;
+}
+
+.contentL__item img {
+    width: 50vw;
+}
+
+.contentR__item {
+    background-color: #02021D;
+    width: 50vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.contentR__item h3 {
+    color: #FFF;
+}
+
+.contact__infos {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(189, 189, 189);
+    border-left: 1px solid rgb(189, 189, 189);
+    border-right: 1px solid rgb(189, 189, 189);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.footer__container {
+    background-color: #02021D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title__footer {
+    color: #FFF;
+}
+
+.contact__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFF;
+    padding-bottom: 15px;
+    gap: 15px;
+}
+
+.title__footer {
+    margin: 10px 0px;
+}
+
+.contact__footer a {
+    width: 24px;
+    height: 24px;
 }

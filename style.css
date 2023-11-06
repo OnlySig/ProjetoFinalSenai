@@ -154,6 +154,10 @@ li {
 
 .middleBanner__infos {
     background-color: #F2F2F2;
+    text-align: center;
+    text-align: center;
+    margin: 20px;
+    border-radius: 1rem;
 }
 
 .stars {
@@ -163,7 +167,7 @@ li {
 }
 
 .img__middleBanner {
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .text__infos {
@@ -284,4 +288,161 @@ li {
 .contact__footer a {
     width: 24px;
     height: 24px;
+}
+
+.logo__desk {
+    display: none;
+}
+
+.stars {
+    gap: 12px;
+}
+
+.stars img {
+    height: 20px;
+}
+
+/*----------------------TABLET-----------------------*/
+
+@media screen and (min-width: 765px) {
+
+    .model__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .produtos__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .produto__item {
+        flex-grow: 1;
+        width: 367px;
+        height: 500px;
+    }
+
+    .bannerR {
+        background-color: rgb(242, 242, 242);
+        text-align: center;
+        margin: 20px;
+        border-radius: 1rem;
+    }
+
+    .bannerR img {
+        width: auto;
+    } 
+
+    .produto__item:nth-child(10) {
+        flex-grow: 0;
+    }
+}
+
+@media screen and (min-width: 830px) {
+    .navBar {
+        padding: 10px 0px;
+    }
+
+    .mobile__init {
+        display: none;
+    }
+
+    .logo__desk {
+        display: block;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    
+    .ancors, .ancorsL {
+        flex-direction: row;
+    }
+
+    .mobile__ancors {
+        position: initial;
+        display: flex;
+        transform: translateX(0%);
+        background-color: #FFF;
+        padding: 0px 40px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    
+}
+
+@media screen and (min-width: 1360px) {
+    .middelsBanner__itens {
+        padding: 50px;
+        display: flex;
+        gap: 30px;
+    }
+
+    .bannerL, .bannerR {
+        border-radius: 1rem;
+        background-color: #F2F2F2;
+        padding: 20px;
+    }
+
+    .bannerL {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bannerR {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .bannerR img {
+        height: 80%;
+    }
+
+    .middleBanner__infos {
+        display: flex;
+        align-items: center;
+    }
+
+    .text__infos {
+        width: 482px;
+    }
+
+    .mostru__container {
+        display: flex;
+        padding: 50px;
+    }
+
+    .mostru__itemPrincipal {
+        display: flex;
+        width: 70%;
+        order: 2;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .itens__sec {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contactUs__container {
+        display: flex;
+    }
+
+    .contact__infos {
+        justify-content: space-evenly;
+    }
+
+    .contentL__item img, .contentR__item, .contact__infos{
+        width: 33vw;
+    }
+
+    .footer__container {
+        margin-top: 50px;
+    }
+
 }

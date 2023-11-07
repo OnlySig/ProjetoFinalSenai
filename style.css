@@ -488,8 +488,14 @@ li {
     top: 0;
     bottom: 0;
     width: 50vw;
-    background-color: red;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(40.774227142333984px);
     z-index: 1;
     transform: translateX(100%);
     transition: .5s;
+}
+
+.navBar {
+    z-index: 1;
+    position: relative;
 }

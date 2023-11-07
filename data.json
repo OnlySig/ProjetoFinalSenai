@@ -1,0 +1,94 @@
+{
+    "Produtos": [
+        {
+            "id": 0,
+            "name": "Placa de Vídeo RTX3060 Gigabyte Windforce OC 12GB GDDR6 DLSS RAY TRACING",    
+            "category": "hardware",
+            "imageUrl": "./src/imgs/rtx3060Gigabyte.png",
+            "oldPrice": "1899",
+            "price": "799",
+            "quantidade": 0
+        },
+        {
+            "id": 1,
+            "name": "Placa de Vídeo Pcyes Nvidia Geforce GTX 1660 Super 6gb Gddr6 192bits Dual-fan Graffiti Series",
+            "category": "hardware",
+            "oldPrice": "999",
+            "imageUrl": "./src/imgs/gtx1660Super.png",
+            "price": "719",
+            "quantidade": 0
+        },
+        {
+            "id": 2,
+            "name": "Placa de Vídeo 2GB GTX1050 OC GALAX GDDR5 128BITS",
+            "category": "hardware",
+            "imageUrl": "./src/imgs/gtx1050.png",
+            "oldPrice": "1349",
+            "price": "944",
+            "quantidade": 0
+        },
+        {
+            "id": 3,
+            "name": "Placa de Vídeo Gigabyte GTX 1050 TI 4GB GDDR5 OC 128-BIT",
+            "category": "hardware",
+            "imageUrl": "./src/imgs/gtx1050ti.png",
+            "oldPrice": "999",
+            "price": "469",
+            "quantidade": 0
+        },
+        {
+            "id": 4,
+            "name": "Placa de Vídeo Asus ROG Strix NVIDIA GeForce RTX 4090 OC Edition 24GB GDDR6X DLSS Ray Tracing",
+            "category": "hardware",
+            "imageUrl": "./src/imgs/rtx4090.png",
+            "oldPrice": "849",
+            "price": "760",
+            "quantidade": 0
+        },
+        {
+            "id": 5,
+            "name": "Placa de Vídeo Gainward GTX 1650 D6 GHOST 4GB GDDR6 128BIT",
+            "category": "hardware",
+            "imageUrl": "./src/imgs/gtx1650.png",
+            "oldPrice": "599",
+            "price": "449",
+            "quantidade": 0
+        },
+        {
+            "id": 6,
+            "name": "Placa de Vídeo RX 6600 FIGHT PCI-E 8GB POWER COLOR 128B DDR6",
+            "category": "hardware",
+            "imageUrl": "./src/imgs/rx6600.png",
+            "oldPrice": "2799",
+            "price": "1196",
+            "quantidade": 0
+        },
+        {
+            "id": 7,
+            "name": "Placa de Vídeo GT740 GDD5 4GB 128BIT",
+            "category": "hardware",
+            "imageUrl": "./src/imgs/gt740.png",
+            "oldPrice": "1049",
+            "price": "890",
+            "quantidade": 0
+        },
+        {
+            "id": 8,
+            "name": "Placa de Vídeo GT610 Afox 2Gb",
+            "category": "hardware",
+            "imageUrl": "./src/imgs/gt610.png",
+            "oldPrice": "3699",
+            "price": "999",
+            "quantidade": 0
+        },
+        {
+            "id": 9,
+            "name": "Placa de Vídeo INNO3D GeForce RTX 3060 TWIN X2 12GB GDDR6",
+            "category": "hardware",
+            "imageUrl": "./src/imgs/rtx3060.png",
+            "oldPrice": "1499",
+            "price": "719",
+            "quantidade": 0
+        }
+    ]
+}

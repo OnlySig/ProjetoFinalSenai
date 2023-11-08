@@ -52,60 +52,50 @@ produtosParaCarrinho.forEach(element => {
         carrinho.classList.add("off")
         const elementoId = element.classList[1]
         const produtoFiltrado = produtos.Produtos.filter(element => element.id == elementoId) 
-        salvar(element, produtoFiltrado[0], prodCarrinho)
+        salvar(element, produtoFiltrado[0], prodCarrinho, elementoId)
     })
 })
 
+function salvar(element, elemento, elementoId) {
+    const prodCarrinho = document.createElement("div")
+    prodCarrinho.classList.add("prod__carrinho")
+    const removeElemento = document.createElement("div")
+    removeElemento.classList.add("removeElemento")
+    removeElemento.innerHTML = "X"
 
-function salvar(element, elemento, prodCarrinho) {
-    const elementoId = element.classList[1]
-    console.log(elementoId)
-    prodCarrinho.classList.add(".prod__carrinho")
     let arry = []
-    if(localStorage.produto) {
-        console.log("test")
-        arry = JSON.parse(localStorage.produto)
-        arry.forEach(element => {
-            if(arry.filter(element => element.id) == elementoId) {
-                elemento.quantidade++
-            } else {
-                arry.push(elemento)
-                prodCarrinho = ""
-                localStorage.setItem("produto", JSON.stringify(arry))
-                    prodCarrinho += `
-                    <div class="prod__carrinho">
-                        <img src=${element.imageUrl} alt=${element.id}>
-                        <div class="produto__infos">
-                            <h3 class="subTitleProdutos">${element.name}</h3>
-                            <div class="details">
-                                <span>${element.category}</span>
-                                <span>$${element.price}</span>
-                            </div>
-                        </div>
-                    </div>
-            `
-            carrinho.innerHTML=prodCarrinho
-        }
-        })
-    } else {
-            arry.push(elemento)
-            prodCarrinho = ""
-            localStorage.setItem("produto", JSON.stringify(arry))
-                prodCarrinho += `
-                <div class="prod__carrinho">
-                    <img src=${element.imageUrl} alt=${element.id}>
-                    <div class="produto__infos">
-                        <h3 class="subTitleProdutos">${element.name}</h3>
-                        <div class="details">
-                            <span>${element.category}</span>
-                            <span>$${element.price}</span>
-                        </div>
+    if(!localStorage.produto) {
+        localStorage.setItem("produto", JSON.stringify(arry))
+    }
+    arry = JSON.parse(localStorage.produto)
+    if(elementoId == elemento.id){
+        elemento.quantidade++
+    }
+    arry.push(elemento)
+    localStorage.setItem("produto", JSON.stringify(arry))
+
+    prodCarrinho.innerHTML = ""
+        arry.forEach(elementos => {
+            prodCarrinho.innerHTML = `
+                <img src=${elementos.imageUrl} alt=${elementos.id}>
+                <div class="produto__infos">
+                    <h3 class="subTitleProdutos">${elementos.name}</h3>
+                    <div class="details">
+                        <span>${elementos.category}</span>
+                        <span>$${elementos.price}</span>
                     </div>
                 </div>
         `
-        carrinho.innerHTML=prodCarrinho
-    }
+        prodCarrinho.appendChild(removeElemento)
+        carrinho.appendChild(prodCarrinho)
+    })
 
+    const btnRemove = document.querySelectorAll(".removeElemento")
+    btnRemove.forEach(element => {
+        element.addEventListener("click", e => {
+            e.target.parentNode.remove()
+        })
+    })
 }
 
 function carregaElemento(prodCarrinho) {
@@ -125,7 +115,6 @@ function carregaElemento(prodCarrinho) {
                     </div>
                 </div>
         `
-        // carrinho.appendChild(prodCarrinho)
         carrinho.innerHTML = prodCarrinho
     })
     }

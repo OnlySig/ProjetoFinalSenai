@@ -1,5 +1,5 @@
 async function getProdutos() {
-    const conexao = await fetch("http://localhost:5500/src/data.json")
+    const conexao = await fetch("https://onlysig.github.io/ProjetoFinalSenai/src/data.json")
     const conexaoJson = await conexao.json()
     return conexaoJson
 }

@@ -32,7 +32,7 @@ li {
 }
 
 .mobile__ancors {
-    position: absolute;
+    position: fixed;
     top: 50px;
     right: 0;
     transform: translateX(100%);

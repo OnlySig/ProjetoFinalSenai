@@ -11,13 +11,13 @@ const btnCarrinho = document.querySelector("#btnCarrinho")
 
 btnAmburger.addEventListener("click", _ => {
     mobileNav.classList.toggle("off")
-    mobileNav.classList[1] === "off" ? hamburger.children[0].src = "/src/imgs/icon-close.svg" : hamburger.children[0].src = "/src/imgs/icon-hamburger.svg"  
+    mobileNav.classList[1] === "off" ? hamburger.children[0].src = "src/imgs/icon-close.svg" : hamburger.children[0].src = "src/imgs/icon-hamburger.svg"  
 })
 
 
 circulos.forEach(element => {
     element.addEventListener("click", e => {
-        carrossel.style.backgroundImage = `url(/src/imgs/Photo${e.target.attributes[1].value}.png)`
+        carrossel.style.backgroundImage = `url(src/imgs/Photo${e.target.attributes[1].value}.png)`
     })
 })
 
@@ -51,11 +51,11 @@ produtosParaCarrinho.forEach(element => {
         const prodCarrinho = document.createElement("div")
         const elementoId = element.classList[1]
         const produtoFiltrado = produtos.Produtos.filter(element => element.id == elementoId) 
-        salvar(element, produtoFiltrado[0], prodCarrinho, elementoId)
+        salvar(produtoFiltrado[0], prodCarrinho, elementoId)
     })
 })
 
-function salvar(element, elemento, elementoId) {
+function salvar(elemento, elementoId) {
     const prodCarrinho = document.createElement("div")
     prodCarrinho.classList.add("prod__carrinho")
 
@@ -111,18 +111,17 @@ function carregaElemento(produtoCarrinho, elementoLocal) {
     if(localStorage.produto) {
         produtoCarrinho.innerHTML = ''
             produtoCarrinho.innerHTML += `
-                    <img src=${elementoLocal.imageUrl} alt=${elementoLocal.id}>
-                    <div class="produto__infos">
-                        <h3 class="subTitleProdutos">${elementoLocal.name}</h3>
-                        <div class="details">
-                            <span>${elementoLocal.category}</span>
-                            <span>$${elementoLocal.price}</span>
-                        </div>
+                <img src=${elementoLocal.imageUrl} alt=${elementoLocal.id}>
+                <div class="produto__infos">
+                    <h3 class="subTitleProdutos">${elementoLocal.name}</h3>
+                    <div class="details">
+                        <span>${elementoLocal.category}</span>
+                        <span>$${elementoLocal.price}</span>
                     </div>
+                </div>
         `
         produtoCarrinho.appendChild(removeElemento)
         carrinho.appendChild(produtoCarrinho)
-    
     removeElementos()
     }
 }

@@ -6,7 +6,8 @@
             "category": "hardware",
             "imageUrl": "./src/imgs/rtx3060Gigabyte.png",
             "oldPrice": "1899",
-            "price": "799"
+            "price": "799",
+            "quantidade": 0
         },
         {
             "id": 1,
@@ -14,7 +15,8 @@
             "category": "hardware",
             "oldPrice": "999",
             "imageUrl": "./src/imgs/gtx1660Super.png",
-            "price": "719"
+            "price": "719",
+            "quantidade": 0
         },
         {
             "id": 2,
@@ -22,7 +24,8 @@
             "category": "hardware",
             "imageUrl": "./src/imgs/gtx1050.png",
             "oldPrice": "1349",
-            "price": "944"
+            "price": "944",
+            "quantidade": 0
         },
         {
             "id": 3,
@@ -30,7 +33,8 @@
             "category": "hardware",
             "imageUrl": "./src/imgs/gtx1050ti.png",
             "oldPrice": "999",
-            "price": "469"
+            "price": "469",
+            "quantidade": 0
         },
         {
             "id": 4,
@@ -38,7 +42,8 @@
             "category": "hardware",
             "imageUrl": "./src/imgs/rtx4090.png",
             "oldPrice": "849",
-            "price": "760"
+            "price": "760",
+            "quantidade": 0
         },
         {
             "id": 5,
@@ -46,7 +51,8 @@
             "category": "hardware",
             "imageUrl": "./src/imgs/gtx1650.png",
             "oldPrice": "599",
-            "price": "449"
+            "price": "449",
+            "quantidade": 0
         },
         {
             "id": 6,
@@ -54,7 +60,8 @@
             "category": "hardware",
             "imageUrl": "./src/imgs/rx6600.png",
             "oldPrice": "2799",
-            "price": "1196"
+            "price": "1196",
+            "quantidade": 0
         },
         {
             "id": 7,
@@ -62,7 +69,8 @@
             "category": "hardware",
             "imageUrl": "./src/imgs/gt740.png",
             "oldPrice": "1049",
-            "price": "890"
+            "price": "890",
+            "quantidade": 0
         },
         {
             "id": 8,
@@ -70,7 +78,8 @@
             "category": "hardware",
             "imageUrl": "./src/imgs/gt610.png",
             "oldPrice": "3699",
-            "price": "999"
+            "price": "999",
+            "quantidade": 0
         },
         {
             "id": 9,
@@ -78,7 +87,8 @@
             "category": "hardware",
             "imageUrl": "./src/imgs/rtx3060.png",
             "oldPrice": "1499",
-            "price": "719"
+            "price": "719",
+            "quantidade": 0
         }
     ]
 }
